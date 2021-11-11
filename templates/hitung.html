@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>SIMULASI MESIN BIO DIESEL</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">SIMULASI</a>
+    </nav>
+
+    <div class="container contact-form">
+        <div class="contact-image container" style="text-align: center;">
+            <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+        </div>
+        <form method="post" style="text-align: center;">
+            <h3>MASUKKAN DATA SIMULASI ANDA!</h3>
+           <div class="row">
+                <div class="col-md-6 container">
+                    <div class="form-group">
+                        <input type="text" name="nrpm" class="form-control" placeholder="Nrpm *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="tnm" class="form-control" placeholder="Tnm *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="m" class="form-control" placeholder="m *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="tin" class="form-control" placeholder="Tin *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="tcw" class="form-control" placeholder="Tcw *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="btnSubmit" class="btnContact" value="Jalankan Simulasi" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
